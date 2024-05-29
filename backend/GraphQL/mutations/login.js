@@ -18,7 +18,6 @@ const resolvers = {
     Mutation: {
         login: async (root, args) => {
             const user = await User.findOne({ username: args.username })
-        
             if ( !user || args.password !== 'secret' ) {
                 throw new GraphQLError('wrong credentials', {
                     extensions: {
@@ -26,6 +25,8 @@ const resolvers = {
                     }
                 })        
             }
+
+            console.log(user)
         
             const userForToken = {
                 username: user.username,

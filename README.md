@@ -29,7 +29,9 @@ Estructura para proyecto estándar con React/Node, creada con Vite y usando Grap
 
 Además, ya viene con algunos componentes, y funciones para que todo sea funcional y puedas probarlo y suarlo como guia.
 
-Tambien de por si manda un header para autorizacion, el token lo saca del localstorage, fijarse con que nombre lo busca y si usa otro recuerde cambiarlo
+Tambien de por si manda un header para autorizacion, el token lo saca del localstorage, fijarse con que nombre lo busca y si usa otro recuerde cambiarlo.
+
+El projecto es un monorepo, por lo que podras instalar y activar tanto el front como el back, con una linea script desde la raiz.
 
 ## Guía de pasos
 
@@ -44,15 +46,9 @@ Tambien de por si manda un header para autorizacion, el token lo saca del locals
     ```
 3. Ejecutar los siguientes comandos:
     ```bash
-    cd backend
     npm install
     npm run dev
     ```
 4. Si cambiaste el valor del PORT en el backend ir a main.jsx de la carpeta frontend y cambiar el valor de uri en httpLink y wsLink
-5. Abrir otra terminal y ejecutar los siguientes comandos:
-    ```bash
-    cd frontend
-    npm install
-    npm run dev
-    ```
+
 6. Listo, a personalizar

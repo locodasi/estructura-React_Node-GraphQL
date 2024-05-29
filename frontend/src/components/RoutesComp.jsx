@@ -20,7 +20,7 @@ const AddPerson = () => {
             try{
                 const letras = ["a","b","f","g","t","d","p","w","r","ñ","l"]
                 let name = "";
-                for(let i = 0; i < 10; i++){
+                for(let i = 0; i < 20; i++){
                     let numero = Math.floor(Math.random()*letras.length)
                     name += letras[numero]
                 }
